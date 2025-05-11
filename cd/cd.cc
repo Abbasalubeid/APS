@@ -1,6 +1,5 @@
 /**
- * The problem is solved by reading the CD catalog numbers for Jack and Jill, and
- * then finding their intersection using a two pointer approach.
+ * Solves the cd problem using a two pointer approach.
  *
  * Time complexity: O(n + m) where n is the number of Jack's CDs and m is the
  * number of Jill's CDs. This is because reading input costs O(n + m)
