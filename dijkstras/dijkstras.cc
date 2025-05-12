@@ -8,7 +8,6 @@
  * Space complexity: O(V)
  *
  * @author Abbas Alubeid - abbal179
- * @date 2025-03-09
  */
 
 #include <iostream>
@@ -17,6 +16,7 @@
 #include <functional>
 #include <climits>
 #include <algorithm>
+#include <vector>
 
 using std::cout, std::cin, std::endl, std::vector, std::pair, std::priority_queue, std::greater;
 
