@@ -13,29 +13,19 @@ You may assume that there is a cut such that the total weight of edges from $U$ 
 ### Sample Input 
 
 ```bash
-4 3 4 0
-0 1 2
-1 2 2
-3 0 2
-0
-1
-2
-3
-2 1 1 0
-0 1 100
-1
-0 0 0 0
+4 5 0 3
+0 1 10
+1 2 1
+1 3 1
+0 2 1
+2 3 10
 
 ```
 
 ### Sample Output 
 
 ```bash
-0
 2
-4
-Impossible
-
-100
-
+1
+0
 ```
