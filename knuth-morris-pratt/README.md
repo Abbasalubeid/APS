@@ -1,0 +1,31 @@
+# [String Matching](https://liu.kattis.com/courses/AAPS/AAPS25/assignments/q25tc9/problems/stringmatching)
+
+### Input
+
+The input consists of several test cases. Each test case consists of two lines, first a non-empty pattern, then a non-empty text. Input is terminated by end-of-file. The input file will not be larger than 5 Mb.
+
+### Output
+
+For each test case, output one line containing the positions of all the occurences of pattern in text, from first to last, separated by a single space.
+
+### Sample Input 
+
+```bash
+p
+Popup
+helo
+Hello there!
+peek a boo
+you speek a bootiful language
+anas
+bananananaspaj
+```
+
+### Sample Output 
+
+```bash
+2 4
+
+5
+7
+```
