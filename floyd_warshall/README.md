@@ -1,0 +1,42 @@
+# [All Pairs Shortest Path](https://liu.kattis.com/courses/AAPS/AAPS25/assignments/uqu3ow/problems/allpairspath)
+
+### Input
+The input consists of several test cases. Each test case starts with a line with three non-negative integers, $1 <= n <= 150$, $0 <= m <= 5000$ and $1 <= q <= 1000$, separated by single single spaces, where $n$ is the numbers of nodes in the graph, $m$ the number of edges and $q$ the number of queries. Nodes are numbered from $0$ to $n-1$. Then follow $m$ lines, each line consisting of three (space-separated) integers $u$, $v$ and $w$ indicating that there is an edge from $u$ to $v$ in the graph with weight $-1000 <= w <= 1000$. Then follow $q$ lines of queries, each consisting of two node numbers $u$ and $v$ (separated by a space), asking for the minimum distance from node $u$ to node $v$.
+
+Input will be terminated by a line containing 0 0 0, this line should not be processed.
+
+### Output
+For each query, output a single line containing the minimum distance from node $u$ to $v$, or the word Impossible if there is no path from $u$ to $v$, or -Infinity if there are arbitrarily short paths from $u$ to $v$. Print a blank line after each test case.
+
+
+### Sample Input 
+
+```bash
+4 3 4
+0 1 2
+1 2 2
+3 3 1
+0 2
+1 2
+3 0
+3 3
+2 1 2
+0 1 100
+0 1
+1 0
+0 0 0
+
+```
+
+### Sample Output 
+
+```bash
+4
+2
+Impossible
+0
+
+100
+Impossible
+
+```
