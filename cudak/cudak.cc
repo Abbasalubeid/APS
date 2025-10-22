@@ -1,4 +1,6 @@
 /**
+ * Not fast enough for Kattis
+ *
  * @author Abbas Alubeid - abbal179
  */
 
