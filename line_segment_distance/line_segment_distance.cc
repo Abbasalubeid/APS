@@ -339,6 +339,32 @@ vector<Point> intersect(Point &a, Point &b, Point &c, Point &d)
     return result;
 }
 
+/**
+ * Computes and returns the minimum distance between two line segments.
+ *
+ * If the segments intersect the distance is zero. Otherwise the minimum distance is
+ * found by checking the distance from each endpoint of one segment to the other
+ * segment.
+ *
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ *
+ */
+double segment_distance(Point &a, Point &b, Point &c, Point &d)
+{
+    vector<Point> result = intersect(a, b, c, d);
+
+    if (result.size() > 0)
+        return 0.0;
+
+    double d1 = point_to_segment_distance(a, c, d);
+    double d2 = point_to_segment_distance(b, c, d);
+    double d3 = point_to_segment_distance(c, a, b);
+    double d4 = point_to_segment_distance(d, a, b);
+
+    return std::min({d1, d2, d3, d4});
+}
+
 int main()
 {
     // Improves IO speed
@@ -360,20 +386,8 @@ int main()
         Point c{x3, y3};
         Point d{x4, y4};
 
-        vector<Point> result = intersect(a, b, c, d);
-
-        if (result.size() > 0)
-            cout << "0.00\n";
-        else
-        {
-            double d1 = point_to_segment_distance(a, c, d);
-            double d2 = point_to_segment_distance(b, c, d);
-            double d3 = point_to_segment_distance(c, a, b);
-            double d4 = point_to_segment_distance(d, a, b);
-
-            double min_distance = std::min({d1, d2, d3, d4});
-            cout << min_distance << "\n";
-        }
+        double distance = segment_distance(a, b, c, d);
+        cout << distance << "\n";
     }
 
     cout << std::flush;
