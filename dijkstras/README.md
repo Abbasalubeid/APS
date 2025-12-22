@@ -8,6 +8,8 @@ Input will be terminated by a line containing four zeros, this line should not b
 
 ### Output
 
+For each query, output a single line containing the minimum distance from node  to the node specified in the query, or the word “Impossible” if there is no path from `s` to that node. For clarity, the sample output has a blank line between the output for different cases.
+
 
 ### Sample Input 
 
