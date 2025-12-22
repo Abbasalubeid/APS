@@ -1,0 +1,53 @@
+# [Interval Cover](https://liu.kattis.com/courses/AAPS/AAPS25/assignments/t7dpmj/problems/intervalcover)
+
+## Problem
+
+For this problem, you are given two things: a numeric interval `[A,B]`, and a list of other numeric intervals which, when combined, should “cover” (overlap completely with) the interval `[A,B]`. In particular, you should find a minimal set of the intervals needed for the cover.
+
+### Input
+
+The input consists of up to 30 test cases. Each test case begins with two real numbers `A≤B`, indicating that `[A,B]` is the interval to be covered. Then follows an integer `1<n≤20 000`, giving the number of intervals available. After this follow `n` lines, the `i’th` of which contains two real numbers `ai<n≤bi`, indicating that the `i’th` interval is `[ai, bi]`. All real numbers have at most 6 digits after the decimal point.
+
+### Output
+
+For each test case, output one line containing the minimal number of intervals needed to cover `[A,B]`, followed by a line containing the indices of one such optimal covering (the first interval has index 0, the second index 1, and so on). The intervals can be given in any order.
+
+If it is not possible to cover `[A,B]` using the intervals, output a line containing the word `“impossible”` instead.
+
+
+### Sample Input 
+
+```bash
+-0.5 1
+3
+-0.9 -0.1
+-0.2 2
+-0.7 1
+0 1
+3
+0 0.25
+0.25 0.75
+0.75 0.999
+0 1
+3
+0 0.25
+0.25 0.75
+0.75 1
+1 1
+1
+1 1
+
+```
+
+### Sample Output 
+
+```bash
+1
+2
+impossible
+3
+0 1 2
+1
+0
+
+```
